@@ -1,0 +1,14 @@
+#if a developer:
+#to make sure optimization is being used, the following lines should
+#be placed in your ~/.R/Makevars (uncommented)
+
+#note that although R may still try to use -O2 flag, the last -Ox instruction
+#on the far right of the compilation instruction is the mandatory one
+
+## -w gets rid of warnings
+## add -Wall to see all
+
+CFLAGS += -O3 -w
+CXXFLAGS += -O3 -w 
+CPPFLAGS += -O3 -w 
+
